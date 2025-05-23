@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.project</groupId>
-  <artifactId>LeetCode20250308</artifactId>
+  <artifactId>LeetCode20250328</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>LeetCode20250308</name>
+  <name>LeetCode20250328</name>
   <url>http://maven.apache.org</url>
 
   <properties>
