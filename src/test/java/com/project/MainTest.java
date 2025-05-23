@@ -1,38 +1,26 @@
 package com.project;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+import static com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut;
+
+public class MainTest {
+
+    @Test
+    public void testMain() {
+
+        assertTrue(true);
+
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Test
+    public void testHelloWorld() throws Exception {
+
+        String text = tapSystemOut(() -> Main.main(new String[]{}));
+
+        assertEquals("Hello World!", text.trim());
+
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }
